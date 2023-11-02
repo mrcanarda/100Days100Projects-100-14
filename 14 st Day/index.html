@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>14 st Day</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="images/logo.svg" alt="" />
+    <section class="container">
+      <div class="web__page grid grid--2-cols">
+        <div class="left__page">
+          <form class="amount-input">
+            <label class="bill__font" for="bill-amount">Bill</label>
+            <input
+              class="input-field"
+              type="number"
+              name="amount"
+              id="bill-amount"
+              placeholder="0"
+              aria-label="bill-amount"
+              min="0"
+            />
+          </form>
+          <div class="left--page">
+            <label class="tip__select">Select Tip %</label>
+            <form class="percent-options select-tip grid grid--3-cols">
+              <button type="button" class="btn_5" aria-label="add-5-percentage">
+                5 %
+              </button>
+              <button
+                type="button"
+                class="btn_10"
+                aria-label="add-10-percentage"
+              >
+                10 %
+              </button>
+              <button
+                type="button"
+                class="btn_15"
+                aria-label="add-15-percentage"
+              >
+                15 %
+              </button>
+              <button
+                type="button"
+                class="btn_25"
+                aria-label="add-25-percentage"
+              >
+                25 %
+              </button>
+              <button
+                type="button"
+                class="btn_50"
+                aria-label="add-50-percentage"
+              >
+                50 %
+              </button>
+              <input
+                id="custom"
+                class="custom-percentage"
+                type="number"
+                max="100"
+                placeholder="Custom"
+                aria-label="enter-custom-input"
+                min="0"
+              />
+            </form>
+          </div>
+          <form class="num-people">
+            <label for="people-count">Number of People <span></span></label>
+            <input
+              class="input-field"
+              type="number"
+              name="number-people"
+              id="people-count"
+              placeholder="0"
+              aria-label="enter-number-of-people"
+              required
+              aria-required="true"
+              min="0"
+              max="100"
+            />
+          </form>
+        </div>
+        <div class="right__page">
+          <div class="flex tip__first">
+            <p class="tip__amount">Tip Amount <span>/person</span></p>
+            <p>$0.00</p>
+          </div>
+          <div class="flex tip__first">
+            <p class="total">Total <span>/person</span></p>
+            <p>$0.00</p>
+          </div>
+          <button type="button" class="reset__btn" aria-label="reset__btn">
+            RESET
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Your Name Here</a>.
+</div>

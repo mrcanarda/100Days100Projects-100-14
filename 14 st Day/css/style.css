@@ -1,0 +1,131 @@
+/*********
+  margin-bottom: 1.2rem;
+
+  */
+
+/******************
+*** BILL*********
+****************/
+
+.bill__font {
+  font-size: 1.4rem;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 1.2rem;
+}
+
+.amount-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  border-radius: 5px;
+  border: 3px solid transparent;
+
+  font-family: "Space Mono", "Courier New", monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  padding: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/******************
+*** ICONS *********
+****************/
+
+.amount-input::before,
+.num-people::before {
+  position: absolute;
+  font-size: 1.1rem;
+  color: hsl(186, 14%, 43%);
+  opacity: 0.5;
+}
+
+form.amount-input::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: url(../images/icon-dollar.svg);
+  font-weight: 700;
+  top: 27.4rem;
+  left: 37rem;
+}
+
+form.num-people::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: url(../images/icon-person.svg);
+  font-weight: 700;
+  top: 45.5rem;
+  left: 37rem;
+}
+
+/******************
+*** TIPS *********
+****************/
+
+.tip__select {
+  font-size: 1.4rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.btn_5,
+.btn_10,
+.btn_15,
+.btn_25,
+.btn_50 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 10rem;
+  background-color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.custom-percentage {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 10rem;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-family: "Space Mono", monospace;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.percent-options > button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 10rem;
+  background-color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.percent-options > button {
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  letter-spacing: 1.2px;
+}
+
+.percent-options > button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* enable on click */
+.percent-options > button.click {
+  background-color: red;
+}
