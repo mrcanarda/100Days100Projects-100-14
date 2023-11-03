@@ -51,7 +51,7 @@ form.amount-input::before {
   font-family: "Font Awesome 5 Free";
   content: url(../images/icon-dollar.svg);
   font-weight: 700;
-  top: 27.4rem;
+  top: 25.4rem;
   left: 37rem;
 }
 
@@ -60,7 +60,7 @@ form.num-people::before {
   font-family: "Font Awesome 5 Free";
   content: url(../images/icon-person.svg);
   font-weight: 700;
-  top: 45.5rem;
+  top: 50rem;
   left: 37rem;
 }
 
@@ -94,11 +94,13 @@ form.num-people::before {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 10rem;
+  height: 4.8rem;
   border: none;
   background-color: hsl(189, 41%, 97%);
   font-family: "Space Mono", monospace;
   font-size: 1.8rem;
   text-align: center;
+  border-radius: 6px;
 }
 
 .percent-options > button {
@@ -112,6 +114,7 @@ form.num-people::before {
   color: #fff;
   border: none;
   border-radius: 6px;
+  margin-bottom: 1.2rem;
 }
 
 .percent-options > button {
@@ -129,3 +132,16 @@ form.num-people::before {
 .percent-options > button.click {
   background-color: red;
 }
+
+/**********************
+******* PEOPLE ********
+**********************/
+
+.people-count {
+  font-size: 1.4rem;
+  color: hsl(186, 14%, 43%);
+}
+
+/**********************
+******* RIGHT PAGE ***
+**********************/
